@@ -21,6 +21,8 @@ středně široké obrazovky:
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
 }
 
 .paticka {
@@ -37,3 +39,49 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+.pokrm {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.75rem;
+        font-weight: 800;
+        order: 3;
+        position: absolute;
+        bottom:0;
+
+       
+}
+
+
+.maly .pokrm {
+    font-size: 1.2rem;
+}
+
+
+.kontejner {
+    display:flex;
+    flex-wrap: wrap;
+    
+    
+    
+
+}
+
+.recept {
+    border: 1px solid red;
+    padding: 0.5rem;
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    justify-content: space-between;
+    
+   
+}
+
+.hlavni {
+    min-height: 200px;
+}
+
+.maly {
+    min-height: 90px;
+}
+
