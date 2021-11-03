@@ -18,9 +18,19 @@ středně široké obrazovky:
 */
 
 
+
+
+/* ------------------------------- */
+/* ----- DOLE BUDE TVOJE CSS ----- */
+/* ------------------------------- */
+
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: white;
+    text-shadow: 1px 1px 1px #000; color: white;
 }
 
 .paticka {
@@ -33,7 +43,139 @@ body {
     color: silver;
 }
 
+p {
+    margin: 0;
+}
 
-/* ------------------------------- */
-/* ----- DOLE BUDE TVOJE CSS ----- */
-/* ------------------------------- */
+.pokrm {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.75rem;
+        font-weight: 800;
+        order: 3;
+        position: absolute;
+        bottom:0;
+        word-wrap: break-word;
+        margin-bottom: 0.5rem;
+}
+
+
+.maly .pokrm {
+    font-size: 1.2rem;
+}
+
+
+.kontejner {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0.5rem;
+    
+    
+    
+
+}
+
+.recept {
+    border: 1px solid white;
+    padding: 0.5rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    
+   
+}
+
+.hlavni {
+    min-height: 200px;
+    background-image:url(salat.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.maly {
+    min-height: 90px;
+}
+
+.dva {
+    background-image:url(chlebicek.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tri {
+    background-image:url(cizrna.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ctyri {
+    background-image:url(tacos.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.pet {
+    background-image:url(burger.jpg);
+    background-size: cover;
+    background-position: center;
+} 
+
+
+ @media (min-width: 480px) {
+    .pokrm {
+         font-size: 2rem;
+     }
+    .maly .pokrm {
+        font-size: 1.5rem;
+     }.maly .pokrm {
+        font-size: 1.5rem;
+     }
+    .hlavni {
+        min-height: 250px;
+        width: 100%;
+     }
+
+    .maly {
+        min-height: 150px;
+        width: 50%;
+    }
+    .recept {
+        padding: 1.25rem;
+    }
+
+    .kontejner {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 860px) {
+    .pokrm {
+        font-size: 3rem;
+    }
+    .maly .pokrm {
+        font-size: 1.75rem;
+     }
+    .hlavni {
+        height: 400px;
+        width: 33.33%;
+        float: left;
+
+    }
+    .maly {
+        height: 200px;
+        width: 33.33%;
+    }
+    .recept {
+        padding: 1.25rem;
+    }
+    
+    .kontejner {
+        display: block;
+    }
+    .dva {
+        float:left;
+    }
+    .ctyri {
+        float:left;
+    }
+}
